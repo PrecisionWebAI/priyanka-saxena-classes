@@ -1,6 +1,6 @@
-import Home from "@/components/Home";
-import StaticNavbar from "@/components/StaticNavbar";
-import StickyNavbar from "@/components/StickyNavbar";
+import Home from "components/Home";
+import StaticNavbar from "components/StaticNavbar";
+import StickyNavbar from "components/StickyNavbar";
 import React from "react";
 
 type Props = {};

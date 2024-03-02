@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import { Link } from "react-router-dom";
+
 import FacultyHeader from "app/faculty/FacultyHeader";
 //import "./Faculty.css";
 import "app/globals.css";
+import Link from "next/link";
 
 export const faculties = [
   {
@@ -172,7 +173,7 @@ const Faculty = () => {
               className="form-group"
               style={{ marginBottom: "10px", paddingLeft: "10px" }}
             >
-              <a
+              <Link
                 href={`/faculty/${faculty.name}`}
                 className="submit-button"
                 style={{
@@ -188,7 +189,7 @@ const Faculty = () => {
                 }}
               >
                 View Details
-              </a>
+              </Link>
             </div>
           </div>
         ))}

@@ -1,5 +1,6 @@
 import NavbarComponents from "app/about-us/AboutHeader";
-import "./About.css";
+//import "./About.css";
+import "app/globals.css";
 
 import React from "react";
 import { FaSun } from "react-icons/fa6";
@@ -60,7 +61,7 @@ const AboutUs = (props: Props) => {
             <div className="p-2 m-4">
               <Iframe
                 url="https://www.youtube.com/embed/usjSh2kszWc"
-                width="640px"
+                width="500px"
                 height="320px"
                 id=""
                 className="outline-2"
@@ -183,7 +184,7 @@ const AboutUs = (props: Props) => {
             style={{
               position: "relative",
               width: "1350px",
-              height: "450px",
+              height: "500px",
               marginTop: "300px",
               paddingTop: "100px",
             }}
@@ -232,8 +233,8 @@ const AboutUs = (props: Props) => {
           </div>
 
           <div
-            className="box h-250 w-1360 bg-brown"
-            style={{ backgroundColor: "#dfe6e9", height: "300px" }}
+            className="box h-200 w-1360 bg-brown"
+            style={{ backgroundColor: "#dfe6e9", height: "10px" }}
           >
             <div
               className="class"
@@ -258,68 +259,6 @@ const AboutUs = (props: Props) => {
               }}
             >
               [Office Timing 10AM to 7PM ]
-            </div>
-
-            <div className="flex items-center">
-              <div
-                className="sign"
-                style={{
-                  fontSize: "30px",
-                  color: "brown",
-                  marginTop: "30px",
-                  paddingLeft: "40px",
-                }}
-              >
-                Sign up to Newsletter
-              </div>
-              <input
-                className="form-control h-50 w-250 text-base leading-none rounded-none shadow-none block bg-white border border-gray-300 pl-10 pr-16"
-                style={{
-                  marginLeft: "130px",
-                  height: "40px",
-                  marginTop: "30px",
-                }}
-                id="Name"
-                name="Name"
-                placeholder="sample@mail.com"
-                type="text"
-                value=""
-              />
-              <input
-                className="form-control h-36 w-250 text-base leading-none rounded-none shadow-none block bg-white border border-gray-300 pl-10 pr-16"
-                style={{
-                  height: "40px",
-                  marginTop: "30px",
-                  marginLeft: "30px",
-                  width: "200px",
-                }}
-                id="Name"
-                name="Name"
-                placeholder="sample@mail.com"
-                type="text"
-                value=""
-              />
-              <button
-                type="submit"
-                className="submit-button"
-                style={{
-                  backgroundColor: "blue",
-                  height: "40px",
-                  marginTop: "30px",
-                  width: "80px",
-                  color: "white",
-                  fontSize: "15px",
-                }}
-              >
-                Subscribe{" "}
-              </button>
-            </div>
-
-            <div
-              className="name"
-              style={{ fontSize: "14px", paddingLeft: "40px" }}
-            >
-              You will receive every news and recent update on your email!!!
             </div>
           </div>
         </div>

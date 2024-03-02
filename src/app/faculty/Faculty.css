@@ -1,4 +1,4 @@
-.child-box {
+.childbox {
     width: 250px; 
     height: 290px; 
     float: left; 
@@ -12,7 +12,7 @@
     border: 2px solid #333;
     
 }
-.parent-box {
+.parentbox {
     width: 1200px; /* You can adjust the width as needed */
     height: 500px;
     margin: 50px auto; /* Center the parent box */

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { FaMailBulk, FaSearch } from "react-icons/fa";
 import { FaCartShopping, FaPhone } from "react-icons/fa6";
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type Props = {};
@@ -13,7 +13,7 @@ const StaticNavbar = (props: Props) => {
   return (
     <div className="bg-white w-full flex justify-center items-center flex-col">
       <div className="bg-primary flex flex-1 w-full px-5 gap-10">
-        <div className="flex py-1 items-center gap-2 flex-1">
+        <div className="flex py-1 items-center gap-2 flex-1 text-white">
           <span className="px-2 py-1 text-yellow-400 bg-black rounded font-bold flex">
             Update:
           </span>
@@ -109,7 +109,7 @@ const StaticNavbar = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex gap-2 items-center py-1 text-sm">
+        <div className="flex gap-2 items-center py-1 text-sm text-white">
           <FaPhone />
           <span className="flex min-w-max">88 2660 2669</span>
           <FaMailBulk className="ml-4" />

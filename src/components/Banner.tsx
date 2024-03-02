@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { FaGoogle, FaStar, FaStarHalf } from "react-icons/fa6";
-import { Rating } from "react-simple-star-rating";
 
 type Props = {};
 

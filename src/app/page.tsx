@@ -8,8 +8,8 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div className="bg-white min-h-screen flex flex-col overflow-auto">
-      <StaticNavbar />
-      <StickyNavbar />
+      {/* <StaticNavbar />
+      <StickyNavbar /> */}
       <Home />
     </div>
   );

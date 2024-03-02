@@ -1,20 +1,39 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { FaMailBulk, FaSearch } from "react-icons/fa";
 import { FaCartShopping, FaPhone } from "react-icons/fa6";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type Props = {};
 
 const StaticNavbar = (props: Props) => {
   return (
     <div className="bg-white w-full flex justify-center items-center flex-col">
-      <div className="bg-primary flex flex-1 w-full px-[10%]">
-        <div className="flex py-1 items-center w-full gap-2">
+      <div className="bg-primary flex flex-1 w-full px-5 gap-10">
+        <div className="flex py-1 items-center gap-2 flex-1">
           <span className="px-2 py-1 text-yellow-400 bg-black rounded font-bold flex">
             Update:
           </span>
           <div className="flex w-full overflow-x-hidden relative box-border h-6 justify-center items-center">
-            <div className="flex animate-marquee-infinite left-0 right-0 top-0 bottom-0 absolute gap-2 box-border font-bold text-sm">
+            <div className="flex animate-marquee-infinite left-0 right-0 top-0 bottom-0 absolute gap-1 box-border font-bold text-sm">
+              {/* <Carousel
+              autoPlay
+              showArrows={false}
+              showThumbs={false}
+              showIndicators={false}
+              showStatus={false}
+              swipeable={false}
+              autoFocus
+              centerMode
+              infiniteLoop
+              // centerSlidePercentage={10}
+              interval={500}
+              width={"20%"}
+            > */}
+              {/* <div className="flex w-full justify-around" /> */}
               <span className="flex min-w-max">
                 CMA Inter New Face to Face - Regular Batch (June / Dec 2024)
               </span>
@@ -51,7 +70,7 @@ const StaticNavbar = (props: Props) => {
                 Priyanka Saxena
               </span>
 
-              <div className="flex w-full justify-around" />
+              {/* <div className="flex w-full justify-around" /> */}
 
               <span className="flex min-w-max">
                 CMA Inter New Face to Face - Regular Batch (June / Dec 2024)
@@ -86,13 +105,14 @@ const StaticNavbar = (props: Props) => {
               </span>
               <span className="flex min-w-max"> Banking Name: </span>
               <span className="flex min-w-max">Priyanka Saxena</span>
+              {/* </Carousel> */}
             </div>
           </div>
         </div>
         <div className="flex gap-2 items-center py-1 text-sm">
           <FaPhone />
-          <span className="flex">88 2660 2669</span>
-          <FaMailBulk className="ml-10" />
+          <span className="flex min-w-max">88 2660 2669</span>
+          <FaMailBulk className="ml-4" />
           <span className="flex">supportncare@priyankasaxenaclasses.com</span>
         </div>
       </div>

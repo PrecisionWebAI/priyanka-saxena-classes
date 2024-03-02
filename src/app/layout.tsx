@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-white flex flex-col overflow-auto">
+        <div className="bg-white flex flex-col">
           <StaticNavbar />
           <StickyNavbar />
         </div>

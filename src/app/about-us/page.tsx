@@ -18,6 +18,7 @@ const AboutUs = (props: Props) => {
   const imgUrl =
     "https://priyankasaxenaclasses.com/wp-content/uploads/2024/01/CMA-STARS-DEC-2017.jpg";
   const vidUrl = "https://youtu.be/usjSh2kszWc";
+
   return (
     <div className="flex flex-col items-center">
       {/* Content of the About Us page */}
@@ -59,7 +60,7 @@ const AboutUs = (props: Props) => {
           </div>
 
           <div className="right-side">
-            <div className="p-2 m-4">
+            <div className="p-2 m-4 relative">
               <Iframe
                 url="https://www.youtube.com/embed/usjSh2kszWc"
                 width="500px"

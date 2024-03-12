@@ -18,7 +18,7 @@ const Footer = (props: Props) => {
   const imgUrl1 = "/images/logo.webp";
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full mt-10">
       <div className="flex items-center bg-accent w-full pr-10">
         <div
           className="sign mr-auto"
@@ -97,10 +97,11 @@ const Footer = (props: Props) => {
           <div className="child-box">
             <Image
               src={imgUrl1}
-              alt="sir"
+              alt="logo"
               className="ml-[15px]"
               width={300}
               height={100}
+              sizes="33vw"
             />
           </div>
           <div

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { FaGoogle, FaStar, FaStarHalf } from "react-icons/fa6";
 
 type Props = {};
@@ -42,6 +42,7 @@ const Banner = (props: Props) => {
               </svg>
             </span>
             <span className="wpr-advanced-text-suffix">
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               Rank Holder In June'24
             </span>
           </h1>

@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 type Props = {};
@@ -11,34 +11,34 @@ const headers = [
   },
   {
     name: "Faculties",
-    key: "faculty",
+    key: "/faculty",
   },
   {
     name: "Blogs",
-    key: "blog",
+    key: "/blog",
   },
   {
     name: "About Us",
-    key: "about-us",
+    key: "/about-us",
   },
   {
     name: "Contact Us",
-    key: "contact-us",
+    key: "/contact-us",
   },
   {
     name: "Face To Face",
-    key: "face-to-face",
+    key: "/face-to-face",
   },
 ];
 
 const StickyNavbar = (props: Props) => {
-  const [active, setActive] = useState(headers[0].key);
-
   const { push } = useRouter();
+  const pathname = usePathname();
 
-  useEffect(() => {
-    push(active);
-  }, [active, push]);
+  // useEffect(() => {
+  //   console.log("PATH", pathname);
+  //   push(pathname === "/" ? active : pathname);
+  // }, [pathname, push]);
 
   return (
     <div className="bg-primary flex min-h-10 sticky top-0 justify-center items-center px-[10%] gap-5">
@@ -46,10 +46,10 @@ const StickyNavbar = (props: Props) => {
         <span
           className={
             "flex hover:bg-white hover:text-black transition-all duration-300 px-2 py-1 rounded-md cursor-pointer" +
-            `${active === h.key ? " bg-white text-black" : " text-white"}`
+            `${pathname === h.key ? " bg-white text-black" : " text-white"}`
           }
           key={h.key}
-          onClick={() => setActive(h.key)}
+          onClick={() => push(h.key)}
         >
           {h.name}
         </span>

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Priyanka-Saxena",
+    "imgUrl": "/images/faculties/CA-CS-CMA-PRIYANKA-SAXENA.webp",
+    "info": "",
+    "mapping": "Faculty1"
+  },
+  {
+    "name": "Santosh-Kumar",
+    "imgUrl": "/images/faculties/CA-CMA-SANTOSH-KUMAR.webp",
+    "info": "",
+    "mapping": "Faculty2"
+  },
+  {
+    "name": "Vishal-Bhattad",
+    "imgUrl": "/images/faculties/CA-VISHAL-BHATTAD.webp",
+    "info": "",
+    "mapping": "Faculty3"
+  },
+
+  {
+    "name": "SumitRastogi",
+    "imgUrl": "/images/faculties/CMA-SUMIT.webp",
+    "info": "",
+    "mapping": "Faculty4"
+  },
+
+  {
+    "name": "Satish-Jalan",
+    "imgUrl": "/images/faculties/CA-SATISH-JALAN.webp",
+    "info": "",
+    "mapping": "Faculty5"
+  },
+
+  {
+    "name": "Ashutosh-Lata",
+    "imgUrl": "/images/faculties/CA-CMA-ASHUTOSH-LATA.webp",
+    "info": "",
+    "mapping": "Faculty6"
+  },
+
+  {
+    "name": "Aditya-Jain",
+    "imgUrl": "/images/faculties/CA-ADITYA-JAIN.webp",
+    "info": "",
+    "mapping": "Faculty7"
+  },
+
+  {
+    "name": "Satyesh-Kumar",
+    "imgUrl": "/images/faculties/PROF.-SATYESH.webp",
+    "info": "",
+    "mapping": "Faculty8"
+  },
+
+  {
+    "name": "Mohd-Rafi",
+    "imgUrl": "/images/faculties/PROF.-MOHD-RAFI.webp",
+    "info": "",
+    "mapping": "Faculty9"
+  },
+  {
+    "name": "Shivangi-Aggarwal",
+    "imgUrl": "/images/faculties/CA-SHIVANI-AGGARWAL.webp",
+    "info": "",
+    "mapping": "Faculty10"
+  },
+  {
+    "name": "Nikkhil-Gupta",
+    "imgUrl": "/images/faculties/CA-CMA-CS-NIKKHIL-GUPTA.webp",
+    "info": "",
+    "mapping": "Faculty11"
+  },
+  {
+    "name": "Harpal-Yadav",
+    "imgUrl": "/images/faculties/CA-HARPAL-YADAV.webp",
+    "info": "",
+    "mapping": "Faculty12"
+  },
+  {
+    "name": "Vinit-Kumar",
+    "imgUrl": "/images/faculties/PROF.-VINIT-KUMAR.webp",
+    "info": "",
+    "mapping": "Faculty13"
+  },
+  {
+    "name": "Mayank-Agarwal",
+    "imgUrl": "/images/faculties/PROF.-MAYAK-AGGARWAL.webp",
+    "info": "",
+    "mapping": "Faculty14"
+  },
+  {
+    "name": "Amarjit-Kaur",
+    "imgUrl": "/images/faculties/ACCA-AMARJIT-KAUR.webp",
+    "info": "",
+    "mapping": "Faculty15"
+  },
+  {
+    "name": "Divay-Miglani",
+    "imgUrl": "/images/faculties/CA-DIVAY-MAGLANI.webp",
+    "info": "",
+    "mapping": "Faculty16"
+  },
+
+  {
+    "name": "Abhimanyu-Agarrwal",
+    "imgUrl": "/images/faculties/CMA-ABHIMANYYU-AGRRAWAL.webp",
+    "info": "",
+    "mapping": "Faculty17"
+  },
+
+  {
+    "name": "Sanjay-Welkins",
+    "imgUrl": "/images/faculties/PROF.-SANJAY-WELINS.webp",
+    "info": "",
+    "mapping": "Faculty18"
+  },
+  {
+    "name": "Vasudha-Jain",
+    "imgUrl": "/images/faculties/PROF.-VASUDHA-JAIN.webp",
+    "info": "",
+    "mapping": "Faculty19"
+  }
+]

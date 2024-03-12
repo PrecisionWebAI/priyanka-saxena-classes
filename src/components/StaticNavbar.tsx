@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { FaMailBulk, FaSearch } from "react-icons/fa";
 import { FaCartShopping, FaPhone } from "react-icons/fa6";
@@ -10,6 +11,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 type Props = {};
 
 const StaticNavbar = (props: Props) => {
+  const { push } = useRouter();
+
   return (
     <div className="bg-white w-full flex justify-center items-center flex-col">
       <div className="bg-primary flex flex-1 w-full px-5 gap-10">
@@ -122,6 +125,9 @@ const StaticNavbar = (props: Props) => {
           alt="Picture of Logo"
           width={180}
           height={70}
+          sizes="33vw"
+          onClick={() => push("/")}
+          className="cursor-pointer"
         />
         <div className="flex items-center gap-4 justify-end">
           <div className="flex relative">

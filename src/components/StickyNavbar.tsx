@@ -1,6 +1,6 @@
 "use client";
 import { useRouter, usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 type Props = {};
 
@@ -8,27 +8,31 @@ const headers = [
   {
     name: "Home",
     key: "/",
-  },
-  {
-    name: "Faculties",
-    key: "/faculty",
-  },
-  {
-    name: "Blogs",
-    key: "/blog",
-  },
-  {
+  },  {
     name: "About Us",
     key: "/about-us",
-  },
-  {
-    name: "Contact Us",
-    key: "/contact-us",
+  },  {
+    name: "Video Courses",
+    key: "/video-courses",
   },
   {
     name: "Face To Face",
     key: "/face-to-face",
   },
+  {
+    name: "Faculty",
+    key: "/faculty",
+  },
+  {
+    name: "Blog",
+    key: "/blog",
+  },
+
+  {
+    name: "Contact Us",
+    key: "/contact-us",
+  },
+
 ];
 
 const StickyNavbar = (props: Props) => {

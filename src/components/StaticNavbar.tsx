@@ -6,7 +6,7 @@ import React from "react";
 import { FaMailBulk, FaSearch } from "react-icons/fa";
 import { FaCartShopping, FaPhone } from "react-icons/fa6";
 // import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type Props = {};
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import StickyNavbar from "@/components/StickyNavbar";
 import StaticNavbar from "@/components/StaticNavbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-white flex flex-col">
-          <StaticNavbar />
-          <StickyNavbar />
-        </div>
+        {/* <div className="bg-white flex flex-col"> */}
+        <StaticNavbar />
+        {/* <StickyNavbar /> */}
+        <Navbar />
+        {/* </div> */}
         {children}
         <Footer />
       </body>

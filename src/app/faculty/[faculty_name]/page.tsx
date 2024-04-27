@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import faculties from "../faculty.json";
+import faculties from "@/data/faculty.json";
 import { useMemo } from "react";
 
 type Faculty = {
@@ -24,19 +24,20 @@ export default function Page({}) {
 
   return (
     faculty && (
-      <div className="flex mt-10 max-w-7xl mx-auto gap-4">
-        {/* <div className="relative w-[1000px] object-contain"> */}
-        <Image
-          src={faculty.imgUrl}
-          alt={faculty.name}
-          width={400}
-          height={50}
-          loading="lazy"
-          // fill
-          sizes="33vw"
-        />
-        {/* </div> */}
-        <div className="flex flex-col mt-4 gap-2">
+      <div className="flex mt-10 max-w-7xl w-full mx-auto gap-4">
+        <div className="relative flex flex-1 ">
+          <div className="flex w-full h-0 pb-[100%]">
+            <Image
+              src={faculty.imgUrl}
+              alt={faculty.name}
+              loading="lazy"
+              fill
+              sizes="33vw"
+              className="object-contain"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mt-4 gap-2 flex-[3]">
           <h3 className="text-3xl font-bold">
             {faculty.name.replace("-", " ")}
           </h3>

@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import Banner from "./Banner";
 import Image from "next/image";
+import Navbar from "./Navbar";
+import FacultyCarousel from "./FacultyCarousel";
 
 type Props = {};
 
@@ -35,14 +38,14 @@ const Home = (props: Props) => {
   return (
     <div className="flex flex-col w-full">
       <Banner />
-      <div className="bg-accent text-white text-4xl font-bold flex w-full justify-center py-5">
+      <div className="bg-accent text-white text-4xl font-bold flex w-full justify-center p-5 text-center">
         Face to Face New Batch Started at Laxmi Nagar
       </div>
-      <div className="flex flex-col gap-3 justify-center items-center">
+      <div className="flex flex-col gap-3 justify-center items-center m-10">
         <span className="text-black text-2xl pb-5 pt-6 font-semibold">
           WHY CHOOSE CLASSES FROM PRIYANKA CLASSES
         </span>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           {whyChoosePCData.map((pcd) => (
             <Image
               src={pcd.image}
@@ -55,6 +58,7 @@ const Home = (props: Props) => {
           ))}
         </div>
       </div>
+      <FacultyCarousel />
     </div>
   );
 };

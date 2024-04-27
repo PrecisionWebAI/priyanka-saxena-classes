@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { GoMail } from "react-icons/go";
 import { FaFacebook } from "react-icons/fa";
 import { TfiYoutube } from "react-icons/tfi";
@@ -15,77 +16,47 @@ import Link from "next/link";
 type Props = {};
 
 const Footer = (props: Props) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
   const imgUrl1 = "/images/logo.webp";
 
   return (
     <div className="flex flex-col w-full mt-10">
-      <div className="flex items-center bg-accent w-full pr-10">
-        <div
-          className="sign mr-auto"
-          style={{
-            fontSize: "25px",
-            color: "white",
-            marginTop: "10px",
-            paddingLeft: "80px",
-          }}
-        >
-          Sign up to Newsletter
+      <div className="flex items-center justify-center bg-accent w-full px-[10px] py-[25px]">
+        <div className="flex max-w-7xl w-full mx-auto justify-between items-center px-[30px] flex-wrap">
+          <div className="flex flex-col text-white gap-2">
+            <span className="text-2xl">Sign up to Newsletter</span>
+            <span className="text-sm">
+              You will receive every news and recent update on your email!!!
+            </span>
+          </div>
+          <div className="flex flex-wrap">
+            <input
+              className="w-60 px-[6px] py-[3px] text-base flex bg-white border border-gray-300 outline-none mr-4 h-[42px] box-border"
+              id="Name"
+              name="Name"
+              placeholder="Enter your full name*"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              className="w-60 px-[6px] py-[3px] text-base flex bg-white border border-gray-300 outline-none h-[42px] box-border"
+              id="Email"
+              name="Email"
+              placeholder="Enter you email address*"
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <div className="bg-primary text-white flex justify-center items-center px-4 text-sm h-[42px] rounded-r-[4px]">
+              Subscribe
+            </div>
+          </div>
         </div>
-        <input
-          className="form-control h-50 w-200 text-base leading-none rounded-none shadow-none block bg-white border border-gray-300 pl-10 pr-16"
-          style={{
-            marginLeft: "270px",
-            height: "40px",
-            marginTop: "20px",
-            width: "250px",
-          }}
-          id="Name"
-          name="Name"
-          placeholder="sample@mail.com"
-          type="text"
-          value=""
-        />
-        <input
-          className="form-control h-36 w-250 text-base leading-none rounded-none shadow-none block bg-white border border-gray-300 pl-10 pr-16"
-          style={{
-            height: "40px",
-            marginTop: "20px",
-            marginLeft: "50px",
-            width: "200px",
-          }}
-          id="Name"
-          name="Name"
-          placeholder="sample@mail.com"
-          type="text"
-          value=""
-        />
-        <button
-          type="submit"
-          className="submit-button"
-          style={{
-            backgroundColor: "blue",
-            height: "40px",
-            marginTop: "20px",
-            width: "80px",
-            color: "white",
-            fontSize: "15px",
-          }}
-        >
-          Subscribe{" "}
-        </button>
       </div>
 
-      <div
-        className="name bg-accent"
-        style={{
-          fontSize: "14px",
-          paddingLeft: "40px",
-          paddingBottom: "15px",
-          color: "white",
-        }}
-      >
-        You will receive every news and recent update on your email!!!
-      </div>
       <div
         className="Content h-96 !w-full flex flex-col md:flex-row sm:flex-row"
         style={{ height: "600px" }}

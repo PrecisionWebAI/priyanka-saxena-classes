@@ -60,17 +60,14 @@ const AboutUs = (props: Props) => {
           </div>
 
           <div className="right-side">
-            <div className="p-2 m-4 relative">
-              <Iframe
-                url="https://www.youtube.com/embed/usjSh2kszWc"
-                width="500px"
-                height="320px"
-                id=""
-                className="outline-2"
-                display="block"
-                position="relative"
-              />
-            </div>
+            <Iframe
+              url="https://www.youtube.com/embed/usjSh2kszWc"
+              width="500px"
+              height="320px"
+              id=""
+              className="outline-2 p-6"
+              display="block"
+            />
           </div>
         </div>
 

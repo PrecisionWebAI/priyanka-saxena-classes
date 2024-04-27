@@ -17,6 +17,7 @@ const config: Config = {
         primary: "#202c45",
         accent: "#f2184f",
         banner: "#EDD5BF",
+        "text-primary": "#333333",
       },
       keyframes: {
         marquee: {

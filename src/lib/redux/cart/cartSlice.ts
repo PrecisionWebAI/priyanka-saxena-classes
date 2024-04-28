@@ -1,4 +1,4 @@
-import { CourseDataType } from "@/app/video-courses/page";
+import { CourseDataType } from "@/app/video-courses/types/video-courses";
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
@@ -29,7 +29,7 @@ export const cartSlice = createSlice({
             ? state.itemsInCart - (itemToRemove ? 1 : 0)
             : 0;
         // state.totalAmount = state.totalAmount - itemToRemove.amount.
-        state.items = state.items.filter((i) => i.id !== itemToRemove.id);
+        state.items = state.items.filter((i) => i?.id !== itemToRemove?.id);
       }
     },
   },

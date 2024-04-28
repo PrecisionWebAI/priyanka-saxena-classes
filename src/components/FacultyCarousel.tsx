@@ -1,8 +1,7 @@
+"use";
 import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import faculty from "@/data/faculty.json";
 import Image from "next/image";
 
@@ -10,31 +9,8 @@ import OwlCarousel from "@ntegral/react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-type RenderIndicatorPropsType = {
-  clickHandler: (e: React.MouseEvent | React.KeyboardEvent) => void;
-  isSelected: boolean;
-  index: number;
-  label: string;
-};
-
-const RenderIndicator = ({
-  clickHandler,
-  isSelected,
-  index,
-  label,
-}: RenderIndicatorPropsType) => {
-  return (
-    <div
-      className={
-        "flex w-3 h-3 rounded-full transition-all border-2 border-primary" +
-        (isSelected ? " bg-primary" : " bg-white")
-      }
-      onClick={clickHandler}
-    />
-  );
-};
-
 const FacultyCarousel = () => {
+  if (typeof window === "undefined") return <></>;
   return (
     <div className="flex flex-col max-w-7xl w-full p-10 m-auto mt-10 gap-10">
       <div className="flex justify-between w-full">
@@ -61,7 +37,6 @@ const FacultyCarousel = () => {
           autoFocus
           autoplayTimeout={1000}
           dotData
-          // dotsEach
         >
           {faculty.slice(0, 8).map((f) => (
             <div

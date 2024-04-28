@@ -2,10 +2,7 @@
 import React from "react";
 import Banner from "./Banner";
 import Image from "next/image";
-import Navbar from "./Navbar";
-import FacultyCarousel from "./FacultyCarousel";
-
-type Props = {};
+// import FacultyCarousel from "./FacultyCarousel";
 
 const whyChoosePCData = [
   {
@@ -34,7 +31,7 @@ const whyChoosePCData = [
   },
 ];
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div className="flex flex-col w-full">
       <Banner />
@@ -58,7 +55,7 @@ const Home = (props: Props) => {
           ))}
         </div>
       </div>
-      <FacultyCarousel />
+      {/* <FacultyCarousel /> */}
     </div>
   );
 };

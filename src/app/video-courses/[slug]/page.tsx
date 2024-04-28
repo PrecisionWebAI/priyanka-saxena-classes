@@ -18,7 +18,7 @@ type CreateOrderResponseType = {
   notes: Record<any, any>;
 };
 
-export type CourseDataType = {
+type CourseDataType = {
   id: string;
   title: string;
   "title-price": string;

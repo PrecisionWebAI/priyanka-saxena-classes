@@ -14,8 +14,6 @@ type Props = {
   params: {
     group: string;
   };
-  parent: ParentCategoryEnumType;
-  query: Record<string, string>;
 };
 
 const getData = (arr: Array<string>, allData: Record<any, any>) => {

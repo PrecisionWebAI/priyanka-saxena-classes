@@ -39,6 +39,8 @@ const MenuItems = ({ items, depthLevel }: MenuItemsPropsType) => {
     };
   }, [dropdown]);
 
+  if (typeof window === "undefined") return <></>;
+
   const onMouseEnter = () => {
     window.innerWidth > 960 && setDropdown(true);
   };

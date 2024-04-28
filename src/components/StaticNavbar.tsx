@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import { FaMailBulk, FaSearch } from "react-icons/fa";
 import { FaCartShopping, FaPhone } from "react-icons/fa6";
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 type Props = {};
 
@@ -22,21 +20,6 @@ const StaticNavbar = (props: Props) => {
           </span>
           <div className="flex w-full overflow-x-hidden relative box-border h-6 justify-center items-center">
             <div className="flex animate-marquee-infinite left-0 right-0 top-0 bottom-0 absolute gap-1 box-border font-bold text-sm">
-              {/* <Carousel
-              autoPlay
-              showArrows={false}
-              showThumbs={false}
-              showIndicators={false}
-              showStatus={false}
-              swipeable={false}
-              autoFocus
-              centerMode
-              infiniteLoop
-              // centerSlidePercentage={10}
-              interval={500}
-              width={"20%"}
-            > */}
-              {/* <div className="flex w-full justify-around" /> */}
               <span className="flex min-w-max">
                 CMA Inter New Face to Face - Regular Batch (June / Dec 2024)
               </span>

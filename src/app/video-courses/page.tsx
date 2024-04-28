@@ -3,7 +3,7 @@ import allData from "@/data/new-video-courses.json";
 import VideoCoursesHeaderDetails from "./VideoCoursesDetailsHeader";
 import Catalog from "@/components/Catalog";
 
-const data: any = [allData[0]];
+const data: any = [];
 
 allData.forEach((ad) => {
   if (!!!data.find((d: { id: string }) => d?.id === ad.id)) data.push(ad);

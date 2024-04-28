@@ -62,7 +62,6 @@ const Blog = (props: Props) => {
               name="Name"
               placeholder="sample@mail.com"
               type="text"
-              value=""
             />
             <button
               type="submit"

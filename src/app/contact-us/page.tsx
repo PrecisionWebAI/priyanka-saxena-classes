@@ -201,7 +201,6 @@ const ContactUs: React.FC = () => {
               name="Name"
               placeholder="Enter Name"
               type="text"
-              value=""
             />
             <input
               className="form-control"
@@ -222,7 +221,6 @@ const ContactUs: React.FC = () => {
               name="Name"
               placeholder="Enter Email Id"
               type="text"
-              value=""
             />
             <input
               className="form-control"
@@ -243,7 +241,6 @@ const ContactUs: React.FC = () => {
               name="Name"
               placeholder="Enter Contact No"
               type="text"
-              value=""
             />
             <input
               className="form-control"
@@ -264,7 +261,6 @@ const ContactUs: React.FC = () => {
               name="Name"
               placeholder="Enter Message"
               type="text"
-              value=""
             />
           </div>{" "}
           <br></br>

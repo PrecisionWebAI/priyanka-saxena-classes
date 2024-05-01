@@ -2,7 +2,7 @@
 import React from "react";
 import Banner from "./Banner";
 import Image from "next/image";
-// import FacultyCarousel from "./FacultyCarousel";
+import FacultyCarousel from "./FacultyCarousel";
 
 const whyChoosePCData = [
   {
@@ -55,7 +55,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      {/* <FacultyCarousel /> */}
+      <FacultyCarousel />
     </div>
   );
 };

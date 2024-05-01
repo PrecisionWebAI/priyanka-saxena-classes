@@ -9,7 +9,7 @@ type Props = {};
 
 const Banner = (props: Props) => {
   return (
-    <div className="flex w-full min-h-[calc(100vh-155px)] gap-4 box-border relative z-0 before:bg-[#A2228F] before:mix-blend-normal before:opacity-[0.83] before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-[1] overflow-hidden">
+    <div className="flex w-full min-h-[calc(100vh-167px)] gap-4 box-border relative z-0 before:bg-[#A2228F] before:mix-blend-normal before:opacity-[0.83] before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-[1]">
       <div className="w-full absolute left-0 top-0 z-[2]">
         <div className="flex h-2 w-full bg-white" />
         <svg
@@ -22,22 +22,28 @@ const Banner = (props: Props) => {
         </svg>
       </div>
 
-      {/* <ReactPlayer
-        playing
-        controls={false}
-        width="100%"
-        height="100%"
-        url="/videos/banner.mp4"
-        loop
-        muted
-        style={{
-          position: "absolute",
-        }}
-      /> */}
-
-      <video muted autoPlay className="absolute object-cover w-full">
-        <source src="/videos/banner.mp4" type="video/mp4" />
-      </video>
+      <div className="flex absolute w-full h-full overflow-hidden object-cover">
+        <ReactPlayer
+          playing
+          controls={false}
+          width="100%"
+          height={"auto"}
+          url="https://www.youtube.com/watch?v=usjSh2kszWc"
+          loop
+          muted
+          style={{
+            objectFit: "cover",
+          }}
+          config={{
+            youtube: {
+              playerVars: {
+                playsinline: 1,
+                showInfo: 0,
+              },
+            },
+          }}
+        />
+      </div>
 
       <div className="bg-transparent rotate-180 absolute left-0 w-full bottom-0 z-[2]">
         <svg

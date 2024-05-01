@@ -217,11 +217,22 @@ button span {
 }
 
 @keyframes fadeRight {
-  from {
-    transform: scale(0);
+  0% {
+    opacity: 1;
+    stroke-dasharray: 0 1500;
   }
-  to {
-    transform: scale(1);
+  12% {
+    stroke-dasharray: 1500 1500;
+  }
+  80% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0;
+    stroke-dasharray: 1500 1500;
+  }
+  100% {
+    stroke-dasharray: 0 1500;
   }
 }
 
@@ -239,7 +250,9 @@ button span {
 }
 
 .wpr-highlighted-text svg path {
-  animation: fadeRight 1s ease-in-out forwards;
+  animation: fadeRight 5s ease-in-out infinite;
+  aniamtion-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 .control-dots {

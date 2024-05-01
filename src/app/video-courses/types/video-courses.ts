@@ -23,7 +23,12 @@ export type CourseDataType = {
   group: "string" | undefined | null;
 };
 
-export type ParentCategoryEnumType = "foundation" | "courses" | "";
+export type ParentCategoryEnumType =
+  | "foundation"
+  | "courses"
+  | ""
+  | "inter"
+  | "final";
 
 export type ProductVariantType = CourseDataType & {
   mode: Array<string>;

@@ -54,7 +54,7 @@ const MenuItems = ({ items, depthLevel }: MenuItemsPropsType) => {
   };
 
   return (
-    <li
+    <div
       className={
         "menu-items transition-colors duration-300 m-[2px]" +
         `${
@@ -122,7 +122,7 @@ const MenuItems = ({ items, depthLevel }: MenuItemsPropsType) => {
       ) : (
         <Link href={items.url}>{items.title}</Link>
       )}
-    </li>
+    </div>
   );
 };
 

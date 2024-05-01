@@ -4,8 +4,12 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import faculty from "@/data/faculty.json";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import OwlCarousel from "@ntegral/react-owl-carousel";
+const OwlCarousel = dynamic(() => import("@ntegral/react-owl-carousel"), {
+  ssr: false,
+});
+
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 

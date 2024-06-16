@@ -26,7 +26,8 @@ const getData = (
 
   arr.forEach((a) => {
     let d = allData.filter(
-      (ad: { type: string; group: string }) => ad?.type === a || ad?.group === a
+      (ad: { type: string; group: string }) =>
+        ad?.type.includes(a) || (ad?.group && ad?.group.includes(a))
     );
     data = d;
   });
@@ -44,7 +45,9 @@ const Page = ({ params: { group } }: Props) => {
     parents.includes("inter") || parents.includes("final");
 
   const allVariants: Array<CourseDataType> = parentData.filter((pd) =>
-    isCatalogueType ? pd.group === group : pd.id === group
+    isCatalogueType
+      ? pd.group?.toLowerCase().split(" ").join("-") === group
+      : pd.id === group
   );
 
   let data: ProductVariantType | any;
@@ -56,11 +59,15 @@ const Page = ({ params: { group } }: Props) => {
         !!!data.find(
           (d: { id: string; type: ParentCategoryEnumType }) => d?.id === ad.id
         ) &&
-        ad.type === parents[0] &&
-        ad.group === group
+        ad.type.includes(parents[0]) &&
+        ad?.group?.toLowerCase().split(" ").join("-") === group
       )
         data.push(ad);
-      else if (!data && ad.type === parents[0] && ad.group === group) {
+      else if (
+        !data &&
+        ad.type.includes(parents[0]) &&
+        ad?.group?.toLowerCase().split(" ").join("-") === group
+      ) {
         data = [];
         data.push(ad);
       }

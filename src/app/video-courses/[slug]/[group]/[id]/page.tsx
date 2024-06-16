@@ -20,7 +20,8 @@ const getData = (arr: Array<string>, allData: Record<any, any>) => {
 
   arr.forEach((a) => {
     let d = allData.filter(
-      (ad: { type: string; group: string }) => ad?.type === a || ad?.group === a
+      (ad: { type: string; group: string }) =>
+        ad?.type.includes(a) || (ad?.group && ad?.group.includes(a))
     );
     data = d;
   });
@@ -32,7 +33,8 @@ const Page = ({ params: { id } }: Props) => {
   const pathName = usePathname();
   const parents = pathName
     .split("/")
-    .filter((p) => p !== "video-courses" && p !== id && !!p);
+    .filter((p) => p !== "video-courses" && p !== id && !!p)
+    .map((p) => p.replaceAll("%20", " "));
   const parentData: Array<CourseDataType> = getData(parents, allData);
   const allVariants: Array<CourseDataType> = parentData.filter(
     (pd) => pd.id === id

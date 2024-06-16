@@ -39,7 +39,7 @@ export default function Page({}) {
         </div>
         <div className="flex flex-col mt-4 gap-2 flex-[3]">
           <h3 className="text-3xl font-bold">
-            {faculty.name.replace("-", " ")}
+            {faculty.name.replaceAll("-", " ")}
           </h3>
           <span className="text-accent">Priyanka Classes</span>
           <p>{faculty.info}</p>

@@ -21,7 +21,7 @@ const Faculty = () => {
         <br />
       </div>
       <div className="flex flex-wrap max-w-7xl m-auto justify-center pb-10 w-full">
-        <div className="grid grid-cols-4 flex-wrap gap-5 w-full box-border">
+        <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 p-5 lg:p-0 flex-wrap gap-5 w-full box-border">
           {faculties.map((faculty, index) => (
             <div
               className="flex w-full bg-[#f5f5f5] items-end border box-border flex-col"

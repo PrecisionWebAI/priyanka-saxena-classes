@@ -26,10 +26,10 @@ const AboutUs = (props: Props) => {
       <br />
       <br />
       <div>
-        <div className="Content">
-          <div className="left-side">
-            <div className="first">PRIYANKA SHARMA CLASSES</div>
-            <div className="main">
+        <div className="Content w-[100%] flex flex-col justify-center items-center ">
+          <div className="left-side w-[85%] lg:w-[100%] ">
+            <div className="first mb-5">PRIYANKA SHARMA CLASSES</div>
+            <div className="main w-[100%]">
               <span>
                 At Priyanka Saxena Classes, we believe in redefining the essence
                 of education. We understand that success in the corporate world
@@ -40,7 +40,7 @@ const AboutUs = (props: Props) => {
               <br />
             </div>
 
-            <div className="medium">
+            <div className="medium w-[100%]">
               <span>
                 Proudly standing as India’s most trusted Coaching institute for
                 Cost and Management Accountant (CMA), Priyanka Saxena Classes is
@@ -73,6 +73,8 @@ const AboutUs = (props: Props) => {
 
         <div className="parent-box">
           <div className="box">OUR FEATURES</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="w-[100%] flex justify-center align-center">
           <div className="child-box flex gap-3">
             <div className="">
               <FaSun
@@ -92,6 +94,8 @@ const AboutUs = (props: Props) => {
               </span>
             </div>
           </div>
+          </div>
+          <div className="w-[100%] flex justify-center align-center">
           <div className="child-box flex gap-3">
             <MdOutlineQueryStats
               style={{
@@ -109,6 +113,8 @@ const AboutUs = (props: Props) => {
               </span>
             </div>
           </div>
+          </div>
+          <div className="w-[100%] flex justify-center align-center">
           <div className="child-box flex gap-3">
             <FaVideo
               style={{
@@ -126,7 +132,8 @@ const AboutUs = (props: Props) => {
               </span>
             </div>
           </div>
-          <br />
+          </div>
+          <div className="w-[100%] flex justify-center align-center">
           <div className="child-box flex gap-3">
             <FaBoxArchive
               style={{
@@ -144,6 +151,8 @@ const AboutUs = (props: Props) => {
               </span>
             </div>
           </div>
+          </div>
+          <div className="w-[100%] flex justify-center align-center">
           <div className="child-box flex gap-3">
             <FaBookOpen
               style={{
@@ -161,6 +170,8 @@ const AboutUs = (props: Props) => {
               </span>
             </div>
           </div>
+          </div>
+          <div className="w-[100%] flex justify-center align-center">
           <div className="child-box flex gap-3">
             <IoBulbSharp
               style={{
@@ -178,35 +189,50 @@ const AboutUs = (props: Props) => {
               </span>
             </div>
           </div>
+          </div>
+          </div>
 
           <div
             className="relative h-[500px] w-full"
             style={{
               position: "relative",
-              width: "1350px",
+              width: "100%",
               height: "500px",
-              marginTop: "300px",
+              marginTop: "3rem",
               paddingTop: "100px",
             }}
           >
-            <Image src={imgUrl} alt="background" fill className="blur-[2px]" />
+            <Image src={imgUrl} alt="background" fill className="blur-[5px] object-cover" />
             <div
               style={{
                 position: "absolute",
-                top: 80,
-                left: 135,
+                display:"flex",
+                flexDirection:"column",
+                justifyContent:"start",
+                alignItems:"center",
+                height:"85%",
+                top: 0,
+                left: 0,
                 zIndex: 1,
                 color: "white",
                 fontSize: "30px",
                 fontWeight: "bold",
-                padding: "20px",
+                padding: "2rem",
                 marginTop: "100px",
+                textAlign:"center"
               }}
             >
               Start your studies with 160,000 enrolled students of COC
               Education.
+              <br />
+            
+              <p className="text-center w-[80%]" style={{fontSize: "22px"}}>Experienced Faculties, Daily Doubt sessions, Ready to counsel any
+              enquiry, supportive technical team and
+              
+              empowering staff is which differentiate
+              </p>
             </div>
-            <div
+            {/* <div
               className="text-white"
               style={{
                 position: "absolute",
@@ -224,12 +250,12 @@ const AboutUs = (props: Props) => {
               enquiry, supportive technical team and
               <br />
               empowering staff is which differentiate
-            </div>
+            </div> */}
           </div>
 
           <div
-            className="box h-200 w-1360 bg-brown"
-            style={{ backgroundColor: "#dfe6e9", height: "10px" }}
+            className="box h-[100%] w-[100%] bg-brown"
+            style={{ backgroundColor: "#dfe6e9", height: "auto" }}
           >
             <div
               className="class"

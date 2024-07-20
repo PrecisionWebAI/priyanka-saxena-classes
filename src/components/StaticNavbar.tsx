@@ -95,7 +95,7 @@ const StaticNavbar = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex gap-2 items-center py-1 text-sm text-white">
+        <div className="flex gap-2 items-center py-1 text-sm text-white overflow-hidden">
           <FaPhone />
           <span className="flex min-w-max">88 2660 2669</span>
           <FaMailBulk className="ml-4" />

@@ -25,10 +25,10 @@ const Catalog = ({ title, data }: CatalogPropsType) => {
       {/* <div>Header Component</div> */}
       <div className="flex w-full max-w-7xl flex-col gap-10">
         <div className="flex flex-col gap-2">
-          <span className="capitalize flex text-2xl">{title}</span>
-          <span className="h-[2px] w-10 bg-accent" />
+          <span className="capitalize flex text-2xl ml-5 md:ml-0">{title}</span>
+          <span className="h-[2px] w-10 bg-accent ml-5 md:ml-0" />
         </div>
-        <div className="grid grid-cols-3 gap-10 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5 gap-10 ">
           {data.map((d) => (
             <Link
               href={getUrl(false, d)}

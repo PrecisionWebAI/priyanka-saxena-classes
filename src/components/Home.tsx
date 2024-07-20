@@ -39,10 +39,10 @@ const Home = () => {
         Face to Face New Batch Started at Laxmi Nagar
       </div>
       <div className="flex flex-col gap-3 justify-center items-center m-10">
-        <span className="text-black text-2xl pb-5 pt-6 font-semibold">
+        <span className="text-black text-2xl pb-5 pt-6 font-semibold text-center">
           WHY CHOOSE CLASSES FROM PRIYANKA CLASSES
         </span>
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex gap-4 flex-wrap justify-center">
           {whyChoosePCData.map((pcd) => (
             <Image
               src={pcd.image}

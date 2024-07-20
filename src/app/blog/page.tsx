@@ -15,7 +15,7 @@ const Blog = (props: Props) => {
           className="box h-250 w-1360 bg-brown"
           style={{
             backgroundColor: "yellow",
-            height: "400px",
+            height: "auto",
             marginTop: "1px",
           }}
         >

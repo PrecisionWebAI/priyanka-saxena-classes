@@ -8,22 +8,23 @@ const ContactUs: React.FC = () => {
     <div className="flex flex-col gap-5">
       <NavbarComponent />
       <div
-        className="Content mx-auto"
+        className="Content mx-auto flex sm:flex-col lg:flex-row flex-col justify-items-center"
         style={{
-          height: "800px",
-          width: "1100px",
-          display: "flex",
-          flexDirection: "row",
+          // height: "800px",
+          width: "100%",
+          
+          
         }}
       >
         <div
-          className="left-side"
+          className="left-side lg:ml-[30px]"
           style={{
             flex: "1",
             padding: "10px",
             display: "flex",
             flexDirection: "column",
-            marginLeft: "30px",
+            
+            width:"100%"
           }}
         >
           <div
@@ -167,26 +168,26 @@ const ContactUs: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="right-side" style={{ flex: "2", paddingLeft: "60px" }}>
-          <div className="interested" style={{ fontSize: "30px" }}>
+        <div className="right-side lg:pl-[60px] flex flex-col align-center" style={{  width:"100%"}}>
+          <div className="interested flex justify-center lg:justify-start" style={{ fontSize: "30px" }}>
             <h1>
               <u>Intersted</u> In Discussing ?
             </h1>
           </div>
           <br></br>
-          <span>
+          <span  className="flex w-[90%] sm:w-[90%] lg:w-[100%] text-center sm:text-center lg:text-start" style={{}}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
             ducimus obcaecati necessitatibus ex, ut iure repudiandae fuga quam
             nostrum hic ea. Placeat ipsum iste pariatur distinctio. Autem
             maiores beatae architecto.
           </span>
-          <div>
+          <div className="flex flex-col items-center sm:items-center lg:items-start w-[100%]">
             <br></br>
             <input
               className="form-control"
               style={{
                 height: "36px",
-                width: "500px",
+                width: "65%",
                 padding: "4px 6px",
                 fontSize: "13px",
                 lineHeight: "1",
@@ -206,7 +207,7 @@ const ContactUs: React.FC = () => {
               className="form-control"
               style={{
                 height: "36px",
-                width: "500px",
+                width: "65%",
                 padding: "4px 6px",
                 fontSize: "13px",
                 lineHeight: "1",
@@ -226,7 +227,7 @@ const ContactUs: React.FC = () => {
               className="form-control"
               style={{
                 height: "36px",
-                width: "500px",
+                width: "65%",
                 padding: "4px 6px",
                 fontSize: "13px",
                 lineHeight: "1",
@@ -246,7 +247,7 @@ const ContactUs: React.FC = () => {
               className="form-control"
               style={{
                 height: "36px",
-                width: "500px",
+                width: "65%",
                 padding: "4px 6px",
                 fontSize: "13px",
                 lineHeight: "1",
@@ -265,7 +266,7 @@ const ContactUs: React.FC = () => {
           </div>{" "}
           <br></br>
           <div
-            className="form-group"
+            className="form-group flex justify-center sm:justify-center lg:justify-start"
             style={{
               marginBottom: "12px",
               boxSizing: "border-box",

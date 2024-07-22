@@ -24,7 +24,7 @@ export default function Page({}) {
 
   return (
     faculty && (
-      <div className="flex mt-10 max-w-7xl w-full mx-auto gap-4">
+      <div className="flex  flex-col lg:flex-row mt-10 max-w-7xl w-full mx-auto gap-4">
         <div className="relative flex flex-1 ">
           <div className="flex w-full h-0 pb-[100%]">
             <Image
@@ -37,12 +37,12 @@ export default function Page({}) {
             />
           </div>
         </div>
-        <div className="flex flex-col mt-4 gap-2 flex-[3]">
-          <h3 className="text-3xl font-bold">
+        <div className="flex flex-col mt-4 gap-2 flex-[3] p-4 lg:p-0">
+          <h3 className="text-2xl lg:text-3xl font-bold">
             {faculty.name.replaceAll("-", " ")}
           </h3>
-          <span className="text-accent">Priyanka Classes</span>
-          <p>{faculty.info}</p>
+          <span className="text-accent " >Priyanka Classes</span>
+          <p className="text-justify lg:text-start">{faculty.info}</p>
         </div>
       </div>
     )

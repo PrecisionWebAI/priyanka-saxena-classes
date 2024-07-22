@@ -31,9 +31,9 @@ const Footer = (props: Props) => {
               You will receive every news and recent update on your email!!!
             </span>
           </div>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap flex justify-center">
             <input
-              className="w-60 px-[6px] py-[3px] text-base flex bg-white border border-gray-300 outline-none mr-4 h-[42px] box-border"
+              className="w-60 px-[6px] py-[3px] text-base flex bg-white border border-gray-300 outline-none  h-[42px] box-border m-4 sm:m-4 lg:mr-4"
               id="Name"
               name="Name"
               placeholder="Enter your full name*"
@@ -42,7 +42,7 @@ const Footer = (props: Props) => {
               onChange={(e) => setName(e.target.value)}
             />
             <input
-              className="w-60 px-[6px] py-[3px] text-base flex bg-white border border-gray-300 outline-none h-[42px] box-border"
+              className="w-60 px-[6px] py-[3px] text-base flex bg-white border border-gray-300 outline-none h-[42px] box-border m-4 sm:m-4 lg:mr-4"
               id="Email"
               name="Email"
               placeholder="Enter you email address*"
@@ -50,7 +50,7 @@ const Footer = (props: Props) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <div className="bg-primary text-white flex justify-center items-center px-4 text-sm h-[42px] rounded-r-[4px]">
+            <div className="bg-primary text-white flex justify-center items-center px-4 text-sm h-[42px] rounded-r-[4px] m-4 sm:m-4 lg:mr-4">
               Subscribe
             </div>
           </div>
@@ -58,8 +58,8 @@ const Footer = (props: Props) => {
       </div>
 
       <div
-        className="Content h-96 !w-full flex flex-col md:flex-row sm:flex-row"
-        style={{ height: "600px" }}
+        className="Content  !w-full flex flex-col lg:flex-row md:flex-row sm:flex-col "
+        
       >
         <div
           className="left-side"
@@ -166,6 +166,8 @@ const Footer = (props: Props) => {
           className="right-side"
           style={{ flex: "2", paddingLeft: "60px", backgroundColor: "#ecf0f1" }}
         >
+          <div className="second-box-container ">
+            <div className="second-box-inner-container">
           <div
             className="first"
             style={{
@@ -215,19 +217,18 @@ const Footer = (props: Props) => {
               >
                 About Us
               </Link>
-
               <div
                 className="line"
                 style={{
                   width: "120px",
-
                   height: "1px",
                   backgroundColor: "black",
                   margin: " 0 auto",
                   marginTop: "10px",
-                  marginLeft: "5px",
+                  marginLeft: "4px",
                 }}
               ></div>
+             
             </li>
 
             <li style={{ marginTop: "20px" }}>
@@ -243,19 +244,18 @@ const Footer = (props: Props) => {
               >
                 Blogs
               </Link>
-
               <div
                 className="line"
                 style={{
                   width: "120px",
-
                   height: "1px",
                   backgroundColor: "black",
                   margin: " 0 auto",
                   marginTop: "10px",
-                  marginLeft: "5px",
+                  marginLeft: "4px",
                 }}
               ></div>
+             
             </li>
 
             <li style={{ marginTop: "20px" }}>
@@ -271,19 +271,18 @@ const Footer = (props: Props) => {
               >
                 Contact Us
               </Link>
-
               <div
                 className="line"
                 style={{
                   width: "120px",
-
                   height: "1px",
                   backgroundColor: "black",
                   margin: " 0 auto",
                   marginTop: "10px",
-                  marginLeft: "5px",
+                  marginLeft: "4px",
                 }}
               ></div>
+             
             </li>
 
             <li style={{ marginTop: "20px" }}>
@@ -304,12 +303,11 @@ const Footer = (props: Props) => {
                 className="line"
                 style={{
                   width: "120px",
-
                   height: "1px",
                   backgroundColor: "black",
                   margin: " 0 auto",
                   marginTop: "10px",
-                  marginLeft: "5px",
+                  marginLeft: "4px",
                 }}
               ></div>
             </li>
@@ -327,19 +325,18 @@ const Footer = (props: Props) => {
               >
                 Faculty
               </Link>
-
               <div
                 className="line"
                 style={{
                   width: "120px",
-
                   height: "1px",
                   backgroundColor: "black",
                   margin: " 0 auto",
                   marginTop: "10px",
-                  marginLeft: "5px",
+                  marginLeft: "4px",
                 }}
               ></div>
+             
             </li>
 
             <li style={{ marginTop: "20px" }}>
@@ -355,61 +352,37 @@ const Footer = (props: Props) => {
               >
                 Video Lectures
               </Link>
-
               <div
                 className="line"
                 style={{
                   width: "120px",
-
                   height: "1px",
                   backgroundColor: "black",
                   margin: " 0 auto",
                   marginTop: "10px",
-                  marginLeft: "5px",
+                  marginLeft: "4px",
                 }}
               ></div>
+            
             </li>
 
-            <li style={{ marginTop: "20px" }}>
-              <Link
-                className="text-black"
-                href="/"
-                style={{
-                  textUnderlineOffset: "--",
-                  marginLeft: "17px",
-                  marginTop: "4px",
-                  paddingTop: "5px",
-                }}
-              >
-                Home
-              </Link>
-
-              <div
-                className="line"
-                style={{
-                  width: "120px",
-
-                  height: "1px",
-                  backgroundColor: "black",
-                  margin: " 0 auto",
-                  marginTop: "10px",
-                  marginLeft: "5px",
-                }}
-              ></div>
-            </li>
+          
           </ul>
+          </div>
+          </div>
         </div>
+        <div className="last-side flex flex-col-reverse pl-12 md:pr-0" style={{ flex: "3", backgroundColor: "#ecf0f1" }}>
         <div
-          className="right-side"
+          className="right-side flex flex-col justify-end"
           style={{
             flex: "2",
-            paddingLeft: "50px",
+           
             backgroundColor: "#ecf0f1",
-            marginLeft: "0px",
+           
           }}
         >
           <div
-            className="first"
+            className="first "
             style={{
               fontSize: "20px",
               marginTop: "25px",
@@ -419,40 +392,39 @@ const Footer = (props: Props) => {
           >
             Follow Us
           </div>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <div style={{ marginLeft: "1px", marginRight: "10px" }}>
+          <div className="mt-10 mb-4 flex flex-row justify-evenly" style={{ display: "flex", alignItems: "center" }}>
+            <div >
               <FaFacebook
                 style={{
                   fontSize: "30px",
-                  marginTop: "25px",
-                  paddingLeft: "2px",
+                 
+                 
                 }}
               />
             </div>
-            <div style={{ marginLeft: "1px", marginRight: "5px" }}>
+            <div >
               <TfiYoutube
                 style={{
                   fontSize: "30px",
-                  marginTop: "25px",
-                  paddingLeft: "2px",
+                 
+                 
                 }}
               />
             </div>
-            <div style={{ marginLeft: "5px" }}>
+            <div >
               <FaTelegram
                 style={{
                   fontSize: "30px",
-                  marginTop: "25px",
-                  paddingLeft: "2px",
+                 
+               
                 }}
               />
             </div>
-            <div style={{ marginLeft: "10px" }}>
+            <div >
               <FaInstagram
                 style={{
                   fontSize: "30px",
-                  marginTop: "25px",
-                  paddingLeft: "2px",
+                 
                 }}
               />
             </div>
@@ -460,7 +432,7 @@ const Footer = (props: Props) => {
         </div>
         <div
           className="right-side"
-          style={{ flex: "3", paddingLeft: "60px", backgroundColor: "#ecf0f1" }}
+          style={{ flex: "3", backgroundColor: "#ecf0f1" }}
         >
           <div
             className="first"
@@ -468,23 +440,26 @@ const Footer = (props: Props) => {
               fontSize: "20px",
               marginTop: "25px",
               fontFamily: "sans-serif",
-              marginLeft: "0px",
+             
             }}
           >
             Payments Partner
           </div>
-
-          <div className="icon" style={{ marginTop: "30px" }}>
-            <div style={{ marginLeft: "1px", marginRight: "10px" }}>
-              <FaCcAmazonPay
-                style={{
-                  fontSize: "40px",
-                  marginTop: "10px",
-                  paddingLeft: "2px",
-                }}
-              />
-            </div>
-            <div
+          <div
+            className="icon-wrapper flex flex-col justify-between mt-5 pl-2 "
+            style={{ justifyItems: "center", alignItems: "flex-start" }}
+          >
+            <div className="icon">
+              <div>
+                <FaCcAmazonPay
+                  style={{
+                    fontSize: "40px",
+                    marginTop: "10px",
+                    paddingLeft: "2px",
+                  }}
+                />
+              </div>
+              <div
               className="line"
               style={{
                 width: "200px",
@@ -496,18 +471,18 @@ const Footer = (props: Props) => {
                 marginLeft: "1px",
               }}
             ></div>
-          </div>
-          <div className="icon" style={{ marginTop: "1px" }}>
-            <div style={{ marginLeft: "1px", marginRight: "10px" }}>
-              <SiPaytm
-                style={{
-                  fontSize: "60px",
-                  marginTop: "2px",
-                  paddingLeft: "2px",
-                }}
-              />
             </div>
-            <div
+            <div className="icon">
+              <div>
+                <SiPaytm
+                  style={{
+                    fontSize: "50px",
+                    marginTop: "2px",
+                    paddingLeft: "2px",
+                  }}
+                />
+              </div>
+              <div
               className="line"
               style={{
                 width: "200px",
@@ -519,18 +494,18 @@ const Footer = (props: Props) => {
                 marginLeft: "1px",
               }}
             ></div>
-          </div>
-          <div className="icon" style={{ marginTop: "1px" }}>
-            <div style={{ marginLeft: "1px", marginRight: "10px" }}>
-              <FaCcPaypal
-                style={{
-                  fontSize: "60px",
-                  marginTop: "15px",
-                  paddingLeft: "2px",
-                }}
-              />
             </div>
-            <div
+            <div className="icon">
+              <div>
+                <FaCcPaypal
+                  style={{
+                    fontSize: "40px",
+                    marginTop: "15px",
+                    paddingLeft: "2px",
+                  }}
+                />
+              </div>
+              <div
               className="line"
               style={{
                 width: "200px",
@@ -542,20 +517,18 @@ const Footer = (props: Props) => {
                 marginLeft: "1px",
               }}
             ></div>
-          </div>
-          <div className="icon" style={{ marginTop: "1px" }}>
-            <div
-              style={{ marginLeft: "1px", marginRight: "10px", color: "red" }}
-            >
-              <FaGooglePay
-                style={{
-                  fontSize: "70px",
-                  marginTop: "1px",
-                  paddingLeft: "2px",
-                }}
-              />
             </div>
-            <div
+            <div className="icon">
+              <div style={{ color: "red" }}>
+                <FaGooglePay
+                  style={{
+                    fontSize: "50px",
+                    marginTop: "1px",
+                    paddingLeft: "2px",
+                  }}
+                />
+              </div>
+              <div
               className="line"
               style={{
                 width: "200px",
@@ -567,20 +540,18 @@ const Footer = (props: Props) => {
                 marginLeft: "1px",
               }}
             ></div>
-          </div>
-          <div className="icon" style={{ marginTop: "1px" }}>
-            <div
-              style={{ marginLeft: "1px", marginRight: "10px", color: "blue" }}
-            >
-              <SiPhonepe
-                style={{
-                  fontSize: "60px",
-                  marginTop: "15px",
-                  paddingLeft: "2px",
-                }}
-              />
             </div>
-            <div
+            <div className="icon">
+              <div style={{ color: "blue" }}>
+                <SiPhonepe
+                  style={{
+                    fontSize: "40px",
+                    marginTop: "15px",
+                    paddingLeft: "2px",
+                  }}
+                />
+              </div>
+              <div
               className="line"
               style={{
                 width: "200px",
@@ -592,13 +563,15 @@ const Footer = (props: Props) => {
                 marginLeft: "1px",
               }}
             ></div>
+            </div>
           </div>
+        </div>
         </div>
       </div>
       <div className="bg-gray-800 p-4">
         <div className="container mx-auto">
           <div
-            className="flex items-center justify-between md:justify-start"
+            className="flex items-center justify-between flex  flex-col sm:flex-col sm:justify-center lg:flex-row lg:justify-between "
             style={{ fontSize: "10px" }}
           >
             <Link href="/" className="text-white text-2xl font-bold"></Link>
@@ -606,11 +579,11 @@ const Footer = (props: Props) => {
               &nbsp;&nbsp;Copyright ©2017 COC Education Pvt. Ltd. All Rights
               Reserved
             </span>
-            <div className="md:space-x-4 flex flex-wrap">
+            <div className="md:space-x-4 flex flex-wrap sm:justify-center ">
               <Link
                 href="/about"
                 className="text-white text-sm md:text-base"
-                style={{ paddingLeft: "45rem" }}
+               
               >
                 FAQ
               </Link>

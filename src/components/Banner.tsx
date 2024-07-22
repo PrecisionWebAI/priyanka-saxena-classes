@@ -9,7 +9,7 @@ type Props = {};
 
 const Banner = (props: Props) => {
   return (
-    <div className="flex w-full min-h-[calc(100vh-167px)] gap-4 box-border relative z-0 before:bg-[#A2228F] before:mix-blend-normal before:opacity-[0.83] before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-[1]">
+    <div className="flex w-full lg:min-h-[calc(100vh-167px)] md:min-h-[calc(100vh-167px)] sm:min-h-[calc(100vh-30rem)]  min-h-[calc(100vh-30rem)] gap-4 box-border relative z-0 before:bg-[#A2228F] before:mix-blend-normal before:opacity-[0.83] before:block before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-[1]">
       <div className="w-full absolute left-0 top-0 z-[2]">
         <div className="flex h-2 w-full bg-white" />
         <svg
@@ -56,7 +56,7 @@ const Banner = (props: Props) => {
         </svg>
       </div>
 
-      <div className="flex flex-1 flex-col py-20 pl-20 gap-10 z-[2]">
+      <div className="flex  flex-col pt-20 pl-20 gap-10 z-[2]">
         <div className="flex gap-4 items-center">
           <div className="text-sm font-semibold text-black flex gap-2 items-center  shadow-md rounded-full py-2 px-4 bg-[#A2228F] hover:text-[#FFFC71] cursor-pointer">
             <FaGoogle />
@@ -105,9 +105,9 @@ const Banner = (props: Props) => {
           </span>
         </div>
       </div>
-      <div className="flex flex-1 z-0">
-        {/* <Image src="/images/banner.webp" alt="Banner Image" fill /> */}
-      </div>
+      {/* <div className="flex flex-1 z-0">
+        <Image src="/images/banner.webp" alt="Banner Image" fill />
+      </div> */}
     </div>
   );
 };

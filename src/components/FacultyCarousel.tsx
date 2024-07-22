@@ -1,4 +1,4 @@
-"use";
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -15,10 +15,11 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const FacultyCarousel = () => {
   if (typeof window === "undefined") return <></>;
+
   return (
-    <div className="flex flex-col max-w-7xl w-full p-10 m-auto mt-10 gap-10">
-      <div className="flex justify-between w-full">
-        <div className="text-3xl font-medium">
+    <div className="flex flex-col max-w-7xl w-full px-4 sm:px-10 py-10 m-auto mt-10 gap-10">
+      <div className="flex flex-col sm:flex-row justify-between w-full items-start sm:items-center">
+        <div className="text-3xl font-medium mb-4 sm:mb-0">
           <span className="text-text-primary border-b-2 border-b-accent">
             OUR
           </span>
@@ -37,9 +38,14 @@ const FacultyCarousel = () => {
           loop
           margin={20}
           autoplay
-          items={4}
+          items={1}
+          responsive={{
+            640: { items: 2 },  // sm breakpoint
+            768: { items: 3 },  // md breakpoint
+            1024: { items: 4 }, // lg breakpoint
+          }}
           autoFocus
-          autoplayTimeout={1000}
+          autoplayTimeout={3000}
           dotData
         >
           {faculty.slice(0, 8).map((f) => (
